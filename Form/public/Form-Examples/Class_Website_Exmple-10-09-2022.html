@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            font-family: Arial;
+            font-size: 15px;
+        }
+       .Image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+       }
+        section{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height: 700px;
+            border-bottom: 1px solid gray;
+            margin-top: -40px;
+            
+        }
+        form{
+            border: 1px solid rgba(12, 12, 12, 0.201);
+            padding: 20px;
+            width: 400px;
+        }
+        ::placeholder{
+            font-size: 15px;
+            font-style: Arial;
+        }
+        label{
+            font-weight: bold;
+            font-size: 15px;
+            font-family: Arial;
+        }
+        .btn{
+            text-emphasis-color: black;
+            width: 360px;
+            background-color:rgba(226, 164, 7, 0.593);
+        }
+        .horizontal-border{
+            border-top: 1px solid rgba(12, 12, 12, 0.201);
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            column-gap: 30px;
+            font-size: 15px;
+            margin-top: 50px;
+           
+            
+        }
+    </style>
+</head>
+
+
+<body>
+        <div class="Image">
+            <img src="../Images/Ama.png" height="80" width="120">
+        </div>
+        <section>
+            <form>
+                <div>
+                    <h4><span class="bi bi-person-fill"></span>Create Account</h4>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="username">Your Name</label>
+                    <input type="text" class="form-control" name="username" placeholder="First and last name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="passWord">Password</label>
+                    <div class="input-group input-group-lg">
+                        <input type="password" class="form-control" name="passWord" placeholder="At least 6 characters" >
+                        <span class="bi bi-key-fill input-group-text"></span>
+                    </div>
+                    <div>
+                        <span>Passwords must be at least 6 characters.</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="RepassWord">Re-enter password</label>
+                    <div class="input-group input-group-lg">
+                        <input type="password" class="form-control" name="RepassWord" >
+                        <span class="bi bi-key-fill input-group-text"></span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="city">City</label>
+                    
+                        <select class="form-select" name="city">
+                            <option>Select Your City</option>
+                            <option>Pune</option>
+                            <option>HYD</option>
+                            <option>BPL</option>
+                        </select>
+                </div>
+                <div class="mb-3">
+                   <button class="btn">Continue</button>
+                </div>
+                <div class="mb-3">
+                    <span>By creating an account, you agree to Amazon's <a href="#">Conditions of Use </a>and <a href="#">Privacy Notice.</a></span>
+                </div>
+                <div class="horizontal-border">
+                    Already have an account? <a href="#"> Sign in</a>
+                    <br>
+                    Buying for work? <a href="#">Create a free business account</a>
+                </div>
+            </form>
+        </section>
+            <footer>
+                <div class="footer">
+                    <div>
+                        <a href="#"> Conditions of Use </a>
+                    </div>
+                    <div>
+                        <a href="#">Privacy Notice</a> 
+                    </div>
+                    <div>
+                        <a href="#">Help</a> 
+                    </div>
+                </div>
+                <div align="center">
+                     © 1996-2022, Amazon.com, Inc. or its affiliates
+                </div>
+            </footer>
+            
+        </div>
+
+    
+    
+    
+</body>
+</html>
